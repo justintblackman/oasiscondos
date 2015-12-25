@@ -11,45 +11,73 @@
 		<link rel="icon" type="image/png" href="/assets/favicons/favicon-32.png" sizes="32x32">
 -->
 	<head>
-		<title>Oasis Condominiums</title>
+		<link rel="shortcut icon" type="image/ico" href="favicon-32.ico" sizes="32x32" />
+		<link rel="shortcut icon" type="image/ico" href="favicon-16.ico" sizes="16x16" />
+		<title>Oasis Condos - Welcome</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!-- Lightbox Effect: http://www.dwuser.com/education/content/click-to-zoom-for-photos-adding-lightbox-effect-to-your-images/ -->
+		<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+		<style type="text/css">
+			a.fancybox img {
+				border: none;
+				box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+				-o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+			} 
+			a.fancybox:hover img {
+				position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+			}
+		</style>
 	</head>
+	
+	<div id="popup1" class="overlay">
+				<div class="popup">
+						<a class="close" href="#popup1">&times;</a>
+					<div class="content">
+						<br>
+						<center><strong>Optional Form</strong></center>
+						<br>
+						<strong>Oasis Condominiums</strong> is presently being marketed as an apartment complex for a single sale and  we are unable to entertain offers for individual condos at this time.
+						<br><br> If you are interested in purchasing individual condos, please fill out the form below and we will let you know when we begin individual sales.
+						Don't worry - we won't share your information with anyone.
+						<center>
+							<iframe src="https://docs.google.com/forms/d/1moQz0i0eqzGA0st3w9wPibvTWrhQjJZOt1Vqwk5ye1Y/viewform?embedded=true" width="600" height="200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						</center>
+					</div>
+				</div>
+	</div>
+	
 	<body class="index">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header" class="alt">
 					<!-- <h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1> -->
-					<h1 id="logo"><a href="index.html"><img src="images/oasiscondos_logo_outline.png" alt="OASIS Condominiums" style="width:200px;height:80px;"></a></h1>
+					<h1 id="logo"><a href="index.html#popup1"><img src="images/oasiscondos_logo_outline.png" alt="OASIS Condominiums" style="width:175px;height:70px;"></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Gallery</a></li>
-							<li class="current"><a href="index.html">Brochure</a></li>
+							<li class="current"><a href="gallery.html">Gallery</a></li>
+							<li class="current"><a href="brochure.html">Brochure</a></li>
 							<li class="submenu">
 								<a href="#">Floorplans</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="floorplans.html#1A">1A &#8212 One Bedroom</a></li>
 									<li class="submenu">
-										<a href="#">Submenu</a>
+										<a href="#">2__ &#8212 Two Bedroom</a>
 										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
+											<li><a href="floorplans.html#2A">2A &#8212 Standard</a></li>
+											<li><a href="floorplans.html#2B">2B &#8212 Plus</a></li>
+											<li><a href="floorplans.html#2C">2C &#8212 California</a></li>
 										</ul>
 									</li>
+									<li><a href="floorplans.html#3A">3A &#8212 Three Bedroom</a></li>
 								</ul>
 							</li>
-							<li><a href="#" class="button special">Contact Us</a></li>
+							<li><a href="contact.html" class="button special">Contact Us</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -73,7 +101,7 @@
 						Prince Rupert, BC.
 						<br />
 						<br />
-						Clean, Quiet, Safe Homes
+						Clean, Quiet, Safe Homes <strong>For Sale</strong>
 						<br />
 						To Live in or To Rent Out
 						</p>
@@ -94,112 +122,185 @@
 						<!--<span class="icon fa-bar-chart-o"></span>-->
 						<h2>The Opportunity:
 						<br />
-						91 Units in a 4 Building Complex</h2>
-						<br /><p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+						92 Condos in a 4 Building Complex</h2>
 						<br />
-						it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-						and, like all my stuff,
+						Each unit is <strong>individually titled</strong> and <strong>move-in ready</strong>.
 						<br />
-						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+						<strong>Furnished</strong> and <strong>Unfurnished</strong> suites available.
+						<br />
 					</header>
-
+					<section class="wrapper style1 container special">
+						<div class="row">
+								<div class="6u 12u(narrower)">
+									<br />
+									<a href="#" class="image featured"><img class="fancybox" src="images/IMG_5828_cut_tiny_shrunk.jpg" alt="" /></a>
+								</div>
+								<div class="6u 12u(narrower)">
+									<br />
+									<a href="#" class="image featured"><img class="fancybox" src="images/IMG_5586_cut_tiny_shrunk.jpg" alt="" /></a>
+								</div>
+						</div>	
+					</section>
+					
 					<!-- One -->
+					<!--
 						<section class="wrapper style2 container special-alt">
 							<div class="row 50%">
 								<div class="8u 12u(narrower)">
-
 									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+										<h2>
+										On Time - On Budget - On Point
+										</h2>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+									<p>It's important to know what you're getting yourself into in the wet climate of Prince Rupert. These beautifully maintained buildings have <strong>stood the test of time.</strong> Our units are <strong>move-in ready</strong> &#8212 none of the slipping deadlines or creeping costs associated with new construction.
+									</p>
+									We offer a wide range of condominiums with select units containing <strong>upscale features</strong> such as:
+									<br />
+									&#8226 In-Suite Laundry<br />
+									&#8226 Renovated Kitchens and Bathrooms<br />
+									&#8226 Heated Tile and High-Gloss Laminate Flooring<br />
+									</p>
+									<!--
+										<li> In-Suite Laundry </li>
+										<li> Renovated Kitchens (full-size appliances) </li>
+										<li> Renovated Bathrooms (floor-to-ceiling tile) </li>
+										<li> Heated Tile Flooring </li>
+										<li> High Gloss Laminate Flooring </li>
+										<li> Dishwashers </li>
+										<br />
+									-->
+					<!-- One -->
+					
+						<section class="wrapper style2 container special-alt">
+							<div class="row 50%">
+								<div class="8u 12u(narrower)">
+									<header>
+										<br />
+										<br />
+										<h2>
+										Meticulously Maintained
+										<br />
+										Refined Renovations
+										</h2>
+									</header>
+									We offer a wide range of condominiums with select units containing <strong>upscale features</strong> such as:
+									<br />
+									&#8226 In-Suite Laundry<br />
+									&#8226 Renovated Kitchens and Bathrooms<br />
+									&#8226 Heated Tile and High-Gloss Laminate Flooring<br />
+									</p>
+									<!--
+										<li> In-Suite Laundry </li>
+										<li> Renovated Kitchens (full-size appliances) </li>
+										<li> Renovated Bathrooms (floor-to-ceiling tile) </li>
+										<li> Heated Tile Flooring </li>
+										<li> High Gloss Laminate Flooring </li>
+										<li> Dishwashers </li>
+										<br />
+									-->									
+									
 									<footer>
 										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
+											<li><a href="#Two" class="button fit scrolly2">Living in a Condo</a></li>
 										</ul>
 									</footer>
 
 								</div>
 								<div class="4u 12u(narrower) important(narrower)">
-
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
-
+									<!-- <ul class="featured-icons"> -->
+										<img class="fancybox" src="images/IMG_6888_tiny_shrunk.jpg" alt="High Gloss Flooring" style="width:270px;height:160px;">
+										<img class="fancybox" src="images/IMG_6467_tiny_shrunk.jpg" alt="Tiled Bathroom" style="width:270px;height:160px;">
+										<img class="fancybox" src="images/IMG_6825_tiny_shrunk.jpg" alt="Laminate Flooring" style="width:270px;height:160px;">
+									<!-- </ul> -->
 								</div>
 							</div>
 						</section>
 
 					<!-- Two -->
-						<section class="wrapper style1 container special">
+					
+						<section class="wrapper style1 container special" id="Two">
+						<br />
+						<br />
+							<header>
+								<h2>
+									Enjoy the Condominium Lifestyle
+								</h2>
+							</header>
 							<div class="row">
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<img class="fancybox" src="images/IMG_6895_cut_tiny_shrunk.jpg" alt="Oasis Security" style="width:250px;height:120px;">
 										<header>
-											<h3>This is Something</h3>
+											<h3>Safety</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>With secured entrances and video surveillance throughout the common property, you can rest assured you'll be safe at home.</p>
 									</section>
 
 								</div>
+
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<img class="fancybox" src="images/IMG_5691_cut_tiny_shrunk.jpg" alt="Oasis Lawn" style="width:250px;height:120px;">
 										<header>
-											<h3>Also Something</h3>
+											<h3>No Muss, No Fuss</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>Goodbye lawn care. Goodbye shovelling snow. Hello turnkey lifestyle.</p>
 									</section>
 
 								</div>
+								
 								<div class="4u 12u(narrower)">
-
 									<section>
-										<span class="icon featured fa-check"></span>
+										<img class="fancybox" src="images/IMG_6753_cut_tiny_shrunk.jpg" alt="Oasis Gym" style="width:250px;height:120px;">
 										<header>
-											<h3>Probably Something</h3>
+											<h3>Amenities</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>Feel like going for a jog when it's raining? Need to relax after a long day? With our hot tub, gym, and sauna, we've got you covered.</p>
 									</section>
-
 								</div>
 							</div>
+							<footer>
+								<ul class="buttons">
+									<li><a href="#Three" class="button fit scrolly2">About Prince Rupert</a></li>
+								</ul>
+							</footer>
 						</section>
-
+					
 					<!-- Three -->
-						<section class="wrapper style3 container special">
-
+						<section id="Three" class="wrapper style3 container special">
 							<header class="major">
-								<h2>Next look at this <strong>cool stuff</strong></h2>
+							<br/>
+							</header>
+							<header class="major">
+								<h2>A World of <strong>Opportunity</strong></h2>
 							</header>
 
 							<div class="row">
 								<div class="6u 12u(narrower)">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img class="fancybox" src="images/IMG_6705_cut_tiny.jpg" alt="" /></a>
 										<header>
-											<h3>A Really Fast Train</h3>
+											<h3><a href="http://www.rupertport.com" target="_blank">Expanding Port</a></h3>
 										</header>
+										<!--
 										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										-->
 									</section>
 
 								</div>
 								<div class="6u 12u(narrower)">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img class="fancybox" src="images/IMG_6717_cut_tiny_shrunk.jpg" alt="" /></a>
 										<header>
-											<h3>An Airport Terminal</h3>
+											<h3><a href="http://www.pacificnorthwestlng.com/media-center/photo-gallery/facility-renderings"  target="_blank">LNG Proposals</a></h3>
 										</header>
+										<!--
 										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										-->
 									</section>
 
 								</div>
@@ -208,33 +309,37 @@
 								<div class="6u 12u(narrower)">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img class="fancybox" src="images/IMG_6693_cut_tiny_shrunk.jpg" alt="" /></a>
 										<header>
-											<h3>Hyperspace Travel</h3>
+											<h3><a href="http://www.princerupert.ca/vision/haystwo" target="_blank">Advancing Community</a></h3>
 										</header>
+										<!--
 										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										-->
 									</section>
 
 								</div>
 								<div class="6u 12u(narrower)">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img class="fancybox" src="images/IMG_6702_cut_tiny_shrunk.jpg" alt="" /></a>
 										<header>
-											<h3>And Another Train</h3>
+											<h3><a href="http://investnorthwestbc.ca/major-projects-and-investment-opportunities/detailed-list-view"  target="_blank">Continued Development</a></h3>
 										</header>
+										<!--
 										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										-->
 									</section>
 
 								</div>
 							</div>
-
+							<!--
 							<footer class="major">
 								<ul class="buttons">
 									<li><a href="#" class="button">See More</a></li>
 								</ul>
 							</footer>
-
+							-->
 						</section>
 
 				</article>
@@ -243,13 +348,17 @@
 				<section id="cta">
 
 					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2>Looking for <strong>more</strong>?</h2>
+						<!--<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>-->
 					</header>
 					<footer>
 						<ul class="buttons">
-							<li><a href="#" class="button special">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
+							<li><a href="gallery.html" class="button">Gallery</a></li>
+							<li><a href="brochure.html" class="button">Brochure</a></li>
+							<li><a href="floorplans.html" class="button">Floorplans</a></li>
+						</ul>
+						<ul class="buttons">
+							<li><a href="contact.html" class="button special">Contact Us</a></li>
 						</ul>
 					</footer>
 
@@ -267,7 +376,7 @@
 					</ul>
 					-->
 					<ul class="copyright">
-						<li>&copy; Blackman Web Design</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; DB Designs: Doing Better</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Technical Difficulties? <a href="mailto:tech-support@oasiscondos.ca">tech-support@oasiscondos.ca</a></li>
 					</ul>
 
 				</footer>
@@ -275,6 +384,7 @@
 		</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/jquery.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -284,5 +394,32 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+			
+			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+			<!-- Lightbox Effect: http://www.dwuser.com/education/content/click-to-zoom-for-photos-adding-lightbox-effect-to-your-images/ -->
+			<script type="text/javascript">
+
+		
+				$(function($){
+					var addToAll = false;
+					var gallery = true;
+					var titlePosition = 'inside';
+					$(addToAll ? 'img' : 'img.fancybox').each(function(){
+						var $this = $(this);
+						var title = $this.attr('title');
+						var src = $this.attr('data-big') || $this.attr('src');
+						var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+						$this.wrap(a);
+				});
+				if (gallery)
+					$('a.fancybox').attr('rel', 'fancyboxgallery');
+					$('a.fancybox').fancybox({
+					titlePosition: titlePosition
+				});
+				});
+				$.noConflict();
+			</script>
 	</body>
 </html>

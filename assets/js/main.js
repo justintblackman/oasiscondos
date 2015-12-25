@@ -48,6 +48,11 @@
 				speed: 1000,
 				offset: -10
 			});
+			
+			$('.scrolly2').scrolly({
+				speed: 1000,
+				offset: -10
+			});
 
 		// Dropdowns.
 			$('#nav > ul').dropotron({
