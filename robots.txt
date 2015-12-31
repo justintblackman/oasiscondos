@@ -1,0 +1,8 @@
+User-agent: *
+
+# Sitemaps
+Sitemap: http://oasiscondos.ca/sitemap.xml
+
+# Do not index directories
+Disallow: /assets/
+Disallow: /images/
